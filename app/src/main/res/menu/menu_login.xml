@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.adminapp.modules.login.view.activity.LoginActivity">
+
+    <item
+        android:id="@+id/login_menu_cerrar"
+        android:title="@string/menu_user_close"/>
+
+</menu>

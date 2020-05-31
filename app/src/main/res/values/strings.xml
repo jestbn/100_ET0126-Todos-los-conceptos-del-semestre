@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">AdmApp</string>
+    <string name="login_title">Iniciar Sesion</string>
+    <string name="login_text_user">Ingresa la cedula<font color='#cc0029'>*</font></string>
+    <string name="login_text_pass">Ingresa la contraseña<font color='#cc0029'>*</font></string>
+    <string name="login_text_welcome">Bienvenido </string>
+    <string name="login_action_sign_in">Ingresar</string>
+    <string name="login_other_user_sign_in">Ingresar con otro usuario</string>
+    <string name="user_login_error">Debe ingresar un usuario</string>
+    <string name="pass_login_error">Debe ingresar una contraseña</string>
+    <string name="login_error">Usuario no se encuentra registrado o la contraseña es incorrecta</string>
+    <string name="save_user_SP_error_title">ERROR GUARDANDO EL USUARIO</string>
+    <string name="save_user_SP_error_msg">NO SE PUDO GUARDAR EL USUARIO USANDO SHAREDPREFERENCES</string>
+    <string name="menu_user_logout">Cerrar sesión</string>
+    <string name="menu_user_ppal">Menu principal</string>
+    <string name="menu_user_close">Salir</string>
+    <string name="logout_confirm_message">¿Está seguro que desea cerrar sesión?</string>
+    <string name="exit_confirm_message">¿Está seguro que desea salir de la aplicacion?</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="opciones_lbl_nombre_opcion">Opcion:</string>
+    <string name="admin_title">Selecciona una opción de administración</string>
+    <string name="delete_title">Elimina un usuario</string>
+    <string name="insert_title">Inserta un usuario</string>
+    <string name="search_title">Búsqueda de usuarios</string>
+    <string name="edit_title">Edición de usuarios</string>
+    <string name="btn_consultar">Consultar</string>
+    <string name="btn_insertar">Insertar</string>
+    <string name="btn_modificar">Actualizar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_limpiar">Limpiar</string>
+    <string name="lbl_cedula">Cédula</string>
+    <string name="lbl_name">Nombre</string>
+    <string name="lbl_pass">Contraseña</string>
+    <string name="lbl_phone">Teléfono</string>
+    <string name="validate_cedula_error">Debe ingresar la cédula</string>
+    <string name="validate_name_error">Debe ingresar el nombre</string>
+    <string name="validate_pass_error">Debe ingresar la contraseña</string>
+    <string name="validate_phone_error">Debe ingresar el teléfono</string>
+    <string name="insert_success">Se ha realizado la inserción con éxito</string>
+    <string name="dup_on_value">Ya existe un registro con la cédula</string>
+    <string name="insert_failed">Ha fallado la inserción del registro</string>
+    <string name="search_not_found">No se encontró el usuario con cédula</string>
+    <string name="update_success">Se ha realizado la actualización con exito</string>
+    <string name="update_failed">Ha fallado la actualización del usuario</string>
+    <string name="err_operation_login">El usuario Loguedo no puede realizarse modificaciones a sí mismo</string>
+
+</resources>

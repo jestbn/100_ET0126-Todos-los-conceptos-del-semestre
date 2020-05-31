@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.adminapp.modules.login.view.activity.LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Toolbar
+            android:id="@+id/toolbar_menu_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimaryDark"
+            android:title="@string/login_title"
+            android:titleTextColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9.5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="-60dp"
+            android:src="@drawable/round" />
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="-120dp"
+            android:padding="20dp"
+            android:src="@drawable/login" />
+
+        <LinearLayout
+            android:id="@+id/login_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="50dp">
+
+            <TextView
+                android:id="@+id/login_tv_bienvenido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingBottom="50dp"
+                android:text="@string/login_text_welcome"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textColor="@color/colorPrimaryDark" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_til_user"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:counterOverflowTextAppearance="@style/AppCustomLoginTextInputLayout"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/user_login_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:drawableStart="@drawable/ic_user"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/login_text_user"
+                    android:inputType="number"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/login_til_password"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:counterOverflowTextAppearance="@style/AppCustomLoginTextInputLayout"
+                app:errorEnabled="true"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/password_login_txt"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="0dp"
+                    android:drawableStart="@drawable/ic_pass"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/login_text_pass"
+                    android:inputType="textPassword"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@android:color/black" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <Button
+                style="@style/ShortAppButtonDark"
+                android:layout_margin="10dp"
+                android:onClick="loginUser"
+                android:text="@string/login_action_sign_in" />
+
+            <Button
+                style="@style/ShortAppButtonlight"
+                android:layout_margin="10dp"
+                android:onClick="loginOtherUser"
+                android:text="@string/login_other_user_sign_in" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

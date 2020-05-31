@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.adminapp.modules.login.view.activity.LoginActivity">
+
+    <item
+        android:id="@+id/admin_menu_logout"
+        android:title="@string/menu_user_logout"/>
+
+    <item
+        android:id="@+id/admin_menu_ppal"
+        android:title="@string/menu_user_ppal"/>
+
+</menu>
